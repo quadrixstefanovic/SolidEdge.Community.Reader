@@ -3,7 +3,7 @@
   <!-- Added by Jason Newell -->
   <Target Name="AfterBuild">
     <PropertyGroup>
-      <ILRepackExe>..\..\packages\ILRepack.1.25.0\tools\ILRepack.exe</ILRepackExe>
+      <ILRepackExe>..\..\packages\ILRepack.2.0.18\tools\ILRepack.exe</ILRepackExe>
       <ILRepackSwitches>/targetplatform:v4 /parallel /wildcards /xmldocs /verbose /internalize /out:"$(TargetDir)ILRepack\$(TargetFileName)"</ILRepackSwitches>
       <ILRepackArgs>$(TargetDir)$(TargetFileName) $(TargetDir)ICSharpCode.SharpZipLib.dll</ILRepackArgs>
       <ILRepackCommand>$(ILRepackExe) $(ILRepackSwitches) $(ILRepackArgs)</ILRepackCommand>
